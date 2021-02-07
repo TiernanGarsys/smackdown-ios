@@ -10,25 +10,23 @@ import Starscream
 
 class SocketManager: NSObject, WebSocketDelegate {
 
-    private var socketUrl: URL
     private var socket: WebSocket?
+    private let delegate: SocketManagerDelegate?
+    private var connected = false
     
-    @Published var connected = false
-    
-    init(address: String = "ws://sim.smogon.com/showdown/websocket") {
-        socketUrl = URL(string: address)!
+    init(delegate: SocketManagerDelegate?) {
+        self.delegate = delegate
     }
     
-    func connect() {
-        let request = URLRequest(url: socketUrl)
+    func connect(address: String = "ws://sim.smogon.com/showdown/websocket") {
+        let request = URLRequest(url: URL(string: address)!)
         socket = WebSocket(request: request)
         socket!.delegate = self
         socket!.connect()
     }
     
-    func send(inputText: String) {
-        socket?.write(string: inputText)
-        print("WROTE: \(inputText)")
+    func send(text: String) {
+        socket?.write(string: text)
     }
     
     func didReceive(event: WebSocketEvent, client: WebSocket) {
@@ -38,11 +36,15 @@ class SocketManager: NSObject, WebSocketDelegate {
         case .connected(let headers):
             print("websocket is connected: \(headers)")
             connected = true
+            break
         case .disconnected(let reason, let code):
             print("websocket is disconnected: \(reason) with code: \(code)")
             connected = false
+            break
         case .text(let string):
             print("Received text: \(string)")
+            delegate?.receivedText(text: string)
+            break
         case .binary(let data):
             print("Received data: \(data.count)")
         case .ping(_):
@@ -66,4 +68,8 @@ class SocketManager: NSObject, WebSocketDelegate {
             break
         }
     }
+}
+
+protocol SocketManagerDelegate {
+    func receivedText(text: String) -> Void
 }

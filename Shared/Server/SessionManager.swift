@@ -7,14 +7,20 @@
 
 import Foundation
 
-class SessionManager: ObservableObject {
-    
+class SessionManager: ObservableObject, SocketManagerDelegate {
+
     @Published var loggedIn: Bool = false
+    @Published var receivedMessages: [String] = []
     
-    private let socketManager: SocketManager
+    private var socketManager: SocketManager?
+
     
     init() {
-        socketManager = SocketManager()
-        self.socketManager.connect()
+        socketManager = SocketManager(delegate: self)
+        self.socketManager!.connect()
+    }
+    
+    func receivedText(text: String) {
+        receivedMessages.append(text)
     }
 }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @State private var username: String = "smackdowntest"
+    @State private var password: String = "pikapika"
     
     var body: some View {
         VStack(spacing: 20) {
