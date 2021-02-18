@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6E5E8425DE0E5900C3A612 /* ServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E5E8325DE0E5900C3A612 /* ServerMessage.swift */; };
+		6E6E5E8525DE0E5900C3A612 /* ServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E5E8325DE0E5900C3A612 /* ServerMessage.swift */; };
+		6E6E5E8925DE0EEF00C3A612 /* ClientMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E5E8825DE0EEF00C3A612 /* ClientMessage.swift */; };
+		6E6E5E8A25DE0EEF00C3A612 /* ClientMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E5E8825DE0EEF00C3A612 /* ClientMessage.swift */; };
 		6EA36D6425C8DA22004AE2A1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA36D5125C8DA21004AE2A1 /* App.swift */; };
 		6EA36D6525C8DA22004AE2A1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA36D5125C8DA21004AE2A1 /* App.swift */; };
 		6EA36D6625C8DA22004AE2A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA36D5225C8DA21004AE2A1 /* HomeView.swift */; };
@@ -25,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E6E5E8325DE0E5900C3A612 /* ServerMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerMessage.swift; sourceTree = "<group>"; };
+		6E6E5E8825DE0EEF00C3A612 /* ClientMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMessage.swift; sourceTree = "<group>"; };
 		6EA36D5125C8DA21004AE2A1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		6EA36D5225C8DA21004AE2A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6EA36D5325C8DA22004AE2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E6E5E7225DE025700C3A612 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				6E6E5E8825DE0EEF00C3A612 /* ClientMessage.swift */,
+				6E6E5E8325DE0E5900C3A612 /* ServerMessage.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		6EA36D4B25C8DA21004AE2A1 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +86,7 @@
 		6EA36D5025C8DA21004AE2A1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6E6E5E7225DE025700C3A612 /* Message */,
 				6EA36D9725CBADF2004AE2A1 /* Util */,
 				6EA36D7925C8DC06004AE2A1 /* Server */,
 				6EA36D5125C8DA21004AE2A1 /* App.swift */,
@@ -229,6 +245,8 @@
 			files = (
 				6EA36D8825CBA614004AE2A1 /* SessionManager.swift in Sources */,
 				6EA36D9925CBAE03004AE2A1 /* Binding.swift in Sources */,
+				6E6E5E8925DE0EEF00C3A612 /* ClientMessage.swift in Sources */,
+				6E6E5E8425DE0E5900C3A612 /* ServerMessage.swift in Sources */,
 				6EA36D6625C8DA22004AE2A1 /* HomeView.swift in Sources */,
 				6EA36D7F25C8E583004AE2A1 /* SocketManager.swift in Sources */,
 				6EA36D9125CBA8BB004AE2A1 /* LoginView.swift in Sources */,
@@ -242,6 +260,8 @@
 			files = (
 				6EA36D8925CBA614004AE2A1 /* SessionManager.swift in Sources */,
 				6EA36D9A25CBAE03004AE2A1 /* Binding.swift in Sources */,
+				6E6E5E8A25DE0EEF00C3A612 /* ClientMessage.swift in Sources */,
+				6E6E5E8525DE0E5900C3A612 /* ServerMessage.swift in Sources */,
 				6EA36D6725C8DA22004AE2A1 /* HomeView.swift in Sources */,
 				6EA36D8025C8E583004AE2A1 /* SocketManager.swift in Sources */,
 				6EA36D9225CBA8BB004AE2A1 /* LoginView.swift in Sources */,
