@@ -26,6 +26,8 @@
 		6EA36D9225CBA8BB004AE2A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA36D9025CBA8BB004AE2A1 /* LoginView.swift */; };
 		6EA36D9925CBAE03004AE2A1 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA36D9825CBAE03004AE2A1 /* Binding.swift */; };
 		6EA36D9A25CBAE03004AE2A1 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA36D9825CBAE03004AE2A1 /* Binding.swift */; };
+		6EC063B625E218B400C080A3 /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC063B525E218B400C080A3 /* Decoding.swift */; };
+		6EC063B725E218B400C080A3 /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC063B525E218B400C080A3 /* Decoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		6EA36D8725CBA613004AE2A1 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		6EA36D9025CBA8BB004AE2A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6EA36D9825CBAE03004AE2A1 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		6EC063B525E218B400C080A3 /* Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			children = (
 				6E6E5E8825DE0EEF00C3A612 /* ClientMessage.swift */,
 				6E6E5E8325DE0E5900C3A612 /* ServerMessage.swift */,
+				6EC063B525E218B400C080A3 /* Decoding.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -250,6 +254,7 @@
 				6EA36D6625C8DA22004AE2A1 /* HomeView.swift in Sources */,
 				6EA36D7F25C8E583004AE2A1 /* SocketManager.swift in Sources */,
 				6EA36D9125CBA8BB004AE2A1 /* LoginView.swift in Sources */,
+				6EC063B625E218B400C080A3 /* Decoding.swift in Sources */,
 				6EA36D6425C8DA22004AE2A1 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +270,7 @@
 				6EA36D6725C8DA22004AE2A1 /* HomeView.swift in Sources */,
 				6EA36D8025C8E583004AE2A1 /* SocketManager.swift in Sources */,
 				6EA36D9225CBA8BB004AE2A1 /* LoginView.swift in Sources */,
+				6EC063B725E218B400C080A3 /* Decoding.swift in Sources */,
 				6EA36D6525C8DA22004AE2A1 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

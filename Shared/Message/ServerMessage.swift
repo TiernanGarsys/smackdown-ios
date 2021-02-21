@@ -17,6 +17,7 @@ struct ServerMessage {
     let payload: Payload
 }
 
+// The potential types of messages that can be received from the server.
 enum ServerMessageType {
     case activeUsers
     case battleFormats

@@ -28,6 +28,10 @@ class SocketManager: NSObject, WebSocketDelegate {
     func send(text: String) {
         socket?.write(string: text)
     }
+
+    func send(message: ClientMessage) {
+        // TODO(tiernan): Convert to text and write to socket
+    }
     
     func didReceive(event: WebSocketEvent, client: WebSocket) {
         print(event)
